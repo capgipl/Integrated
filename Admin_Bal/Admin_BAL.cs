@@ -63,12 +63,12 @@ namespace Admin_Bal
                 }
                 if (user.Pass == string.Empty)
                 {
-                    builderObj.AppendLine("Password Should be Provided.....");
+                    builderObj.AppendLine("Pass Should be Provided.....");
                     validUser = false;
                 }
                 else if (!Regex.IsMatch(user.Pass, @"[A-Za-z0-9]{8,16}$"))
                 {
-                    builderObj.AppendLine("Password must contain Alphabets and numbers and start with capital Letter..");
+                    builderObj.AppendLine("Pass must contain Alphabets and numbers and start with capital Letter..");
                     validUser = false;
                 }
                 if (validUser == false)

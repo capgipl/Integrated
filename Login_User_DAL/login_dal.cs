@@ -21,7 +21,7 @@ namespace Login_User_DAL
                 //Login data = new Login()
                 //{
                 //    username= login.username,
-                //    Pass=login.Pass,
+                //    Password=login.Password,
                 //    role=login.role
                 //};
                 entity.Users.Add(login);

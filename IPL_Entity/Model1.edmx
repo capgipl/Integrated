@@ -618,7 +618,7 @@ error 6004: The table '16MayCHN.IPL_MGMT_SYSTEM.PlayerPhoto' is referenced by a 
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="Entities5" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="Entities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Logins" EntityType="Self.Login" />
           <EntitySet Name="Matches" EntityType="Self.Match" />
           <EntitySet Name="MatchPhotoes" EntityType="Self.MatchPhoto" />
@@ -680,7 +680,7 @@ error 6004: The table '16MayCHN.IPL_MGMT_SYSTEM.PlayerPhoto' is referenced by a 
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="MayCHNModelStoreContainer" CdmEntityContainer="Entities5">
+        <EntityContainerMapping StorageEntityContainer="MayCHNModelStoreContainer" CdmEntityContainer="Entities1">
           <EntitySetMapping Name="Logins">
             <EntityTypeMapping TypeName="MayCHNModel.Login">
               <MappingFragment StoreEntitySet="Login">

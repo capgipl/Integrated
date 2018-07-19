@@ -21,7 +21,7 @@ namespace Customer_DAL
                     MatchId = t.MatchId,
                     TicketCategoryId = t.TicketCategoryId+1,
                     Price = t.Price,
-                    NumberOfTickets=t.NumberOfTickets
+                    
                     
                 };
                 entity.Tickets.Add(ticket);
