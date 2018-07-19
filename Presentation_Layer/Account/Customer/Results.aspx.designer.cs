@@ -22,6 +22,15 @@ namespace Presentation_Layer.Account.Customer {
         protected global::System.Web.UI.WebControls.Literal ErrorMessage;
         
         /// <summary>
+        /// lblname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblname;
+        
+        /// <summary>
         /// TeamName control.
         /// </summary>
         /// <remarks>
@@ -40,75 +49,147 @@ namespace Presentation_Layer.Account.Customer {
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
         
         /// <summary>
-        /// Played control.
+        /// lblplayed control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Played;
+        protected global::System.Web.UI.WebControls.Label lblplayed;
         
         /// <summary>
-        /// won control.
+        /// txtPlayed control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox won;
+        protected global::System.Web.UI.WebControls.Label txtPlayed;
         
         /// <summary>
-        /// lost control.
+        /// lblwon control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox lost;
+        protected global::System.Web.UI.WebControls.Label lblwon;
         
         /// <summary>
-        /// Tied control.
+        /// txtwon control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Tied;
+        protected global::System.Web.UI.WebControls.Label txtwon;
         
         /// <summary>
-        /// nr control.
+        /// lbllost control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nr;
+        protected global::System.Web.UI.WebControls.Label lbllost;
         
         /// <summary>
-        /// netrr control.
+        /// txtlost control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox netrr;
+        protected global::System.Web.UI.WebControls.Label txtlost;
         
         /// <summary>
-        /// pts control.
+        /// lbltied control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox pts;
+        protected global::System.Web.UI.WebControls.Label lbltied;
         
         /// <summary>
-        /// frompts control.
+        /// txtTied control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox frompts;
+        protected global::System.Web.UI.WebControls.Label txtTied;
+        
+        /// <summary>
+        /// lblnr control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblnr;
+        
+        /// <summary>
+        /// txtnr control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label txtnr;
+        
+        /// <summary>
+        /// lblnrr control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblnrr;
+        
+        /// <summary>
+        /// txtnetrr control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label txtnetrr;
+        
+        /// <summary>
+        /// lblpoints control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblpoints;
+        
+        /// <summary>
+        /// txtpts control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label txtpts;
+        
+        /// <summary>
+        /// lblfrmpoints control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblfrmpoints;
+        
+        /// <summary>
+        /// txtfrompts control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label txtfrompts;
     }
 }

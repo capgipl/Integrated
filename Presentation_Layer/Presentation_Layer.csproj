@@ -402,6 +402,10 @@
       <Project>{25D0E2CE-CB33-402A-A3D8-68EB3B0859CF}</Project>
       <Name>Admin_Bal</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Customer_BLL\Customer_BLL.csproj">
+      <Project>{A9DA8003-1535-4EDB-A1AA-D72DED683348}</Project>
+      <Name>Customer_BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\IPL_Entity\IPL_Entity.csproj">
       <Project>{C4BD7F31-F0D3-498A-B540-02190C33051C}</Project>
       <Name>IPL_Entity</Name>

@@ -39,7 +39,7 @@ namespace Customer_DAL
         #endregion
 
         #region Search Statistics
-        public List<Stat> Search_Stat(int id)
+        public List<Stat> Search_Stat(string name)
         {
 
             var obj = new List<Stat>();
@@ -47,9 +47,11 @@ namespace Customer_DAL
             {
 
                 Entities1 PracticeEntities1 = new Entities1();
-
+                var data = (from x in PracticeEntities1.Teams
+                            where x.TeamName == name
+                            select x.TeamId).FirstOrDefault();
                 obj = (from t in PracticeEntities1.Stats
-                       where t.TeamId == id
+                       where t.TeamId == (data)
                        select t).ToList();
 
                 PracticeEntities1.SaveChanges();

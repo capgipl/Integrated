@@ -37,7 +37,7 @@ namespace Presentation_Layer.Account
                     if (val == 2)
                 {
 
-                    Response.Redirect("Add_Team.aspx");
+                    Response.Redirect("~/Account/Customer/Home.aspx");
 
                 }
                 else

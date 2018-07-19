@@ -57,7 +57,7 @@ namespace Customer_BLL
         #endregion
 
         #region View Result
-        public List<Stat> view_stat(int id)
+        public List<Stat> view_stat(string id)
         {
             var obje = new List<Stat>();
             try
