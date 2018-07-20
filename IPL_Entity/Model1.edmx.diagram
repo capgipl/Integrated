@@ -30,6 +30,7 @@
         <AssociationConnector Association="MayCHNModel.FK__Schedule__Schedu__29971E47" ManuallyRouted="false" />
         <AssociationConnector Association="MayCHNModel.TicketCategoryId_FK" ManuallyRouted="false" />
         <AssociationConnector Association="MayCHNModel.FK__UserRoles__UserI__45AA1867" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MayCHNModel.Id" Width="1.5" PointX="10.375" PointY="10.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

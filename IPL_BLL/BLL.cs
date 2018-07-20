@@ -736,7 +736,7 @@ namespace IPL_BLL
             }
             if (ValidStat == false)
             {
-                throw new VenueException(sb.ToString());
+                throw new StatisticsException(sb.ToString());
             }
             return ValidStat;
         }

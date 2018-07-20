@@ -23,6 +23,7 @@ namespace IPL_Entity
         public int VenueId { get; set; }
         public string Location { get; set; }
         public string VenueDescription { get; set; }
+        public string VenueName { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Schedule> Schedules { get; set; }

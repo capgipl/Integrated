@@ -12,16 +12,9 @@ namespace IPL_Entity
     using System;
     using System.Collections.Generic;
     
-    public partial class Ticket
+    public partial class Id
     {
-        public int TicketId { get; set; }
-        public Nullable<int> MatchId { get; set; }
-        public Nullable<int> TicketCategoryId { get; set; }
-        public Nullable<int> Price { get; set; }
-        public string NumberOfTickets { get; set; }
-        public string MatchName { get; set; }
-    
-        public virtual Match Match { get; set; }
-        public virtual TicketCategory TicketCategory { get; set; }
+        public int idd { get; set; }
+        public string name { get; set; }
     }
 }

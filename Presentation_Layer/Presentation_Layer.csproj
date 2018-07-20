@@ -167,6 +167,14 @@
     <Content Include="Account\Customer\Schedule.aspx" />
     <Content Include="Account\Customer\Team_Info.aspx" />
     <Content Include="Account\Customer\ViewTicket.aspx" />
+    <Content Include="Account\Employee\Emp_Match\Add_Match.aspx" />
+    <Content Include="Account\Employee\Emp_News\Add_News.aspx" />
+    <Content Include="Account\Employee\Emp_Player\Add_Player.aspx" />
+    <Content Include="Account\Employee\Emp_Schedule\Add_Schedule.aspx" />
+    <Content Include="Account\Employee\Emp_Stat\Add_Stat.aspx" />
+    <Content Include="Account\Employee\Emp_Team\Add_Team.aspx" />
+    <Content Include="Account\Employee\Emp_TicketCategory\Add_TicketCategpry.aspx" />
+    <Content Include="Account\Employee\Emp_Venue\Add_Venue.aspx" />
     <Content Include="Account\Login.aspx" />
     <Content Include="Account\OpenAuthProviders.ascx" />
     <Content Include="Account\Register.aspx" />
@@ -181,6 +189,7 @@
     <Content Include="Account\Web.config" />
     <Content Include="Admin1.Master" />
     <Content Include="Customer_Master.Master" />
+    <Content Include="Employee_Master.Master" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -313,6 +322,62 @@
     <Compile Include="Account\Customer\ViewTicket.aspx.designer.cs">
       <DependentUpon>ViewTicket.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Account\Employee\Emp_Match\Add_Match.aspx.cs">
+      <DependentUpon>Add_Match.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Employee\Emp_Match\Add_Match.aspx.designer.cs">
+      <DependentUpon>Add_Match.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Employee\Emp_News\Add_News.aspx.cs">
+      <DependentUpon>Add_News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Employee\Emp_News\Add_News.aspx.designer.cs">
+      <DependentUpon>Add_News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Employee\Emp_Player\Add_Player.aspx.cs">
+      <DependentUpon>Add_Player.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Employee\Emp_Player\Add_Player.aspx.designer.cs">
+      <DependentUpon>Add_Player.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Employee\Emp_Schedule\Add_Schedule.aspx.cs">
+      <DependentUpon>Add_Schedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Employee\Emp_Schedule\Add_Schedule.aspx.designer.cs">
+      <DependentUpon>Add_Schedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Employee\Emp_Stat\Add_Stat.aspx.cs">
+      <DependentUpon>Add_Stat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Employee\Emp_Stat\Add_Stat.aspx.designer.cs">
+      <DependentUpon>Add_Stat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Employee\Emp_Team\Add_Team.aspx.cs">
+      <DependentUpon>Add_Team.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Employee\Emp_Team\Add_Team.aspx.designer.cs">
+      <DependentUpon>Add_Team.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Employee\Emp_TicketCategory\Add_TicketCategpry.aspx.cs">
+      <DependentUpon>Add_TicketCategpry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Employee\Emp_TicketCategory\Add_TicketCategpry.aspx.designer.cs">
+      <DependentUpon>Add_TicketCategpry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Employee\Emp_Venue\Add_Venue.aspx.cs">
+      <DependentUpon>Add_Venue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Employee\Emp_Venue\Add_Venue.aspx.designer.cs">
+      <DependentUpon>Add_Venue.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Account\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -373,6 +438,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Employee_Master.Master.cs">
+      <DependentUpon>Employee_Master.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Employee_Master.Master.designer.cs">
+      <DependentUpon>Employee_Master.Master</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -405,6 +477,10 @@
     <ProjectReference Include="..\Customer_BLL\Customer_BLL.csproj">
       <Project>{A9DA8003-1535-4EDB-A1AA-D72DED683348}</Project>
       <Name>Customer_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IPL_BLL\IPL_BLL.csproj">
+      <Project>{6C9E08BD-7F56-4A3C-8C1D-0B8AEA7A082F}</Project>
+      <Name>IPL_BLL</Name>
     </ProjectReference>
     <ProjectReference Include="..\IPL_Entity\IPL_Entity.csproj">
       <Project>{C4BD7F31-F0D3-498A-B540-02190C33051C}</Project>

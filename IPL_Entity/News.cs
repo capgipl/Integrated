@@ -19,6 +19,7 @@ namespace IPL_Entity
         public Nullable<int> MatchId { get; set; }
         public string NewsDescription { get; set; }
         public Nullable<int> MatchPhotoId { get; set; }
+        public string MatchName { get; set; }
     
         public virtual Match Match { get; set; }
         public virtual MatchPhoto MatchPhoto { get; set; }

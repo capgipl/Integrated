@@ -30,7 +30,7 @@ namespace Presentation_Layer.Account
                 val = obj.log_user(user);
                 if (val == 1)
                 {
-                    Response.Redirect("Add_Team.aspx");
+                    Response.Redirect("~/Account/Employee/Emp_Match/Add_Match.aspx");
 
                 }
                 else

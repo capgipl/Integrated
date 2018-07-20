@@ -20,6 +20,8 @@ namespace IPL_Entity
         public Nullable<System.DateTime> ScheduleDate { get; set; }
         public string StartTime { get; set; }
         public string EndTime { get; set; }
+        public string MatchName { get; set; }
+        public string VenueName { get; set; }
     
         public virtual Match Match { get; set; }
         public virtual Venue Venue { get; set; }

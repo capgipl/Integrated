@@ -40,5 +40,6 @@ namespace IPL_Entity
         public virtual DbSet<UserRole> UserRoles { get; set; }
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Venue> Venues { get; set; }
+        public virtual DbSet<Id> Ids { get; set; }
     }
 }

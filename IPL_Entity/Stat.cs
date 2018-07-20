@@ -24,5 +24,6 @@ namespace IPL_Entity
         public Nullable<decimal> NetRR { get; set; }
         public Nullable<int> Pts { get; set; }
         public Nullable<int> FromPoints { get; set; }
+        public string TeamName { get; set; }
     }
 }

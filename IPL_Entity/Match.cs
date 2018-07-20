@@ -28,6 +28,10 @@ namespace IPL_Entity
         public Nullable<int> TeamTwoId { get; set; }
         public Nullable<int> VenueId { get; set; }
         public Nullable<int> PhotoGroupId { get; set; }
+        public string MatchName { get; set; }
+        public string TeamOneName { get; set; }
+        public string TeamTwoName { get; set; }
+        public string VenueName { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MatchPhoto> MatchPhotoes { get; set; }

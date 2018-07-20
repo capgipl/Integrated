@@ -21,19 +21,26 @@ namespace IPL_DAL
             try
             {
                 Entities1 entity = new Entities1();
-                Team team = new Team()
-                {
-                    TeamId = t.TeamId,
-                    TeamName = t.TeamName,
-                    HomeGround = t.HomeGround,
-                    Owners = t.Owners
-                };
-                entity.Teams.Add(team);
+                Entities1 ent = new Entities1();
+                Team team = new Team();
+                Id data = new Id();
+                team.TeamName = t.TeamName;
+                team.HomeGround = t.HomeGround;
+                team.Owners = t.Owners;
+               
+                var val = (entity.Ids.OrderByDescending(u => u.idd).FirstOrDefault());
+                team.TeamId = val.idd;
+                data.name = "";
 
+                ent.Ids.Add(data);
+                entity.Teams.Add(team);
+                ent.SaveChanges();
                 entity.SaveChanges();
 
 
+
             }
+
             catch (Exception e)
             {
                 throw (e);
@@ -162,23 +169,33 @@ namespace IPL_DAL
         #region Player DAL
         public int Add_Player(Player p)
         {
+
             try
             {
                 Entities1 entity = new Entities1();
-                Player player = new Player()
-                {
-                    PlayerId = p.PlayerId,
-                    PlayerName = p.PlayerName,
-                    Age = p.Age,
-                    TeamId = p.TeamId,
+                Entities1 ent = new Entities1();
+                Player player = new Player();
+                Id data = new Id();
+                player.PlayerName = p.PlayerName;
+                player.TeamName = p.TeamName;
+                player.Age = p.Age;
+                player.BirthPlace = p.BirthPlace;
+                player.Role = p.Role;
+                player.BattingStyle = p.BattingStyle;
+                player.BowlingStyle = p.BowlingStyle;
+                var val = (entity.Ids.OrderByDescending(u => u.idd).FirstOrDefault());
+                player.PlayerId = val.idd;
+                data.name = "";
 
-                };
+                ent.Ids.Add(data);
                 entity.Players.Add(player);
-
+                ent.SaveChanges();
                 entity.SaveChanges();
 
 
+
             }
+
             catch (Exception e)
             {
                 throw (e);
@@ -313,19 +330,26 @@ namespace IPL_DAL
             try
             {
                 Entities1 entity = new Entities1();
-                Venue venue = new Venue()
-                {
-                    VenueId = v.VenueId,
-                    Location = v.Location,
-                    VenueDescription = v.VenueDescription
+                Entities1 ent = new Entities1();
+                Venue venue = new Venue();
+                Id data = new Id();
+                venue.VenueName = v.VenueName;
+                venue.Location = v.Location;
+                venue.VenueDescription = v.VenueDescription;
+                
+                var val = (entity.Ids.OrderByDescending(u => u.idd).FirstOrDefault());
+                venue.VenueId = val.idd;
+                data.name = "";
 
-                };
+                ent.Ids.Add(data);
                 entity.Venues.Add(venue);
-
+                ent.SaveChanges();
                 entity.SaveChanges();
 
 
+
             }
+
             catch (Exception e)
             {
                 throw (e);
@@ -442,20 +466,26 @@ namespace IPL_DAL
             try
             {
                 Entities1 entity = new Entities1();
-                Match match = new Match()
-                {
-                    MatchId = m.MatchId,
-                    TeamOneId = m.TeamOneId,
-                    TeamTwoId = m.TeamTwoId,
-                    VenueId = m.VenueId
-
-                };
+                Entities1 ent = new Entities1();
+                Match match = new Match();
+                Id data = new Id();
+                match.MatchName = m.MatchName;
+                match.TeamOneName = m.TeamOneName;
+                match.TeamTwoName = m.TeamTwoName;
+                match.VenueName = m.VenueName;
+                var val = (entity.Ids.OrderByDescending(u => u.idd).FirstOrDefault());
+                match.MatchId = val.idd;
+                data.name = "";
+                
+                ent.Ids.Add(data);
                 entity.Matches.Add(match);
-
+                ent.SaveChanges();
                 entity.SaveChanges();
+               
 
 
             }
+            
             catch (Exception e)
             {
                 throw (e);
@@ -572,25 +602,31 @@ namespace IPL_DAL
         #region Schedule DAL
         public int Add_Schedule(Schedule s)
         {
+
             try
             {
                 Entities1 entity = new Entities1();
-                Schedule sch = new Schedule()
-                {
-                    ScheduleId = s.ScheduleId,
-                    MatchId = s.MatchId,
-                    Schedule_VenueId = s.Schedule_VenueId,
-                    ScheduleDate = s.ScheduleDate,
-                    StartTime = s.StartTime,
-                    EndTime = s.EndTime
+                Entities1 ent = new Entities1();
+                Schedule sch = new Schedule();
+                Id data = new Id();
+                sch.MatchName = s.MatchName;
+                sch.VenueName = s.VenueName;
+                sch.ScheduleDate = s.ScheduleDate;
+                sch.StartTime = s.StartTime;
+                sch.EndTime = s.EndTime;
+                var val = (entity.Ids.OrderByDescending(u => u.idd).FirstOrDefault());
+                sch.ScheduleId = val.idd;
+                data.name = "";
 
-                };
+                ent.Ids.Add(data);
                 entity.Schedules.Add(sch);
-
+                ent.SaveChanges();
                 entity.SaveChanges();
 
 
+
             }
+
             catch (Exception e)
             {
                 throw (e);
@@ -712,21 +748,31 @@ namespace IPL_DAL
             try
             {
                 Entities1 entity = new Entities1();
-                Stat st = new Stat()
-                {
-                    TeamId = s.TeamId,
-                    Played = s.Played,
-                    Won = s.Won,
-                    Lost = s.Lost,
-                    Tied = s.Tied,
-                    NR = s.NR,
-                    NetRR = s.NetRR,
-                    Pts = s.Pts,
-                    FromPoints = s.FromPoints
-                };
-                entity.Stats.Add(st);
+                Entities1 ent = new Entities1();
+                Stat stat = new Stat();
+                Id data = new Id();
+                stat.TeamName = s.TeamName;
+                stat.Played = s.Played;
+                stat.Won = s.Won;
+                stat.Lost = s.Lost;
+                stat.Tied = s.Tied;
+                stat.NR = s.NR;
+                stat.NetRR = s.NetRR;
+                stat.Pts = s.Pts;
+                stat.FromPoints = s.FromPoints;
+                var val = (entity.Ids.OrderByDescending(u => u.idd).FirstOrDefault());
+                stat.StatId = val.idd;
+                data.name = "";
+
+                ent.Ids.Add(data);
+                entity.Stats.Add(stat);
+                ent.SaveChanges();
                 entity.SaveChanges();
+
+
+
             }
+
             catch (Exception e)
             {
                 throw (e);
@@ -848,15 +894,23 @@ namespace IPL_DAL
             try
             {
                 Entities1 entity = new Entities1();
-                TicketCategory st = new TicketCategory()
-                {
-                    TicketCategoryId = s.TicketCategoryId,
-                    TicketCategoryName = s.TicketCategoryName,
-                    TicketDescription = s.TicketDescription
-                };
-                entity.TicketCategories.Add(st);
+                Entities1 ent = new Entities1();
+                TicketCategory ticketcat = new TicketCategory();
+                Id data = new Id();
+                ticketcat.TicketCategoryName = s.TicketCategoryName;
+                ticketcat.TicketDescription = s.TicketDescription;
+             
+                var val = (entity.Ids.OrderByDescending(u => u.idd).FirstOrDefault());
+                ticketcat.TicketCategoryId = val.idd;
+                data.name = "";
+
+                ent.Ids.Add(data);
+                entity.TicketCategories.Add(ticketcat);
+                ent.SaveChanges();
                 entity.SaveChanges();
+
             }
+
             catch (Exception e)
             {
                 throw (e);
@@ -971,22 +1025,35 @@ namespace IPL_DAL
         {
             try
             {
-                Entities1 entity = new Entities1();
-                News st = new News()
-                {
-                    MatchId = s.MatchId,
-                    NewsDescription = s.NewsDescription
-                };
-                entity.News.Add(st);
-                entity.SaveChanges();
-            }
-            catch (Exception e)
-            {
-                throw (e);
+           
+                    Entities1 entity = new Entities1();
+                    Entities1 ent = new Entities1();
+                    News news = new News();
+                    Id data = new Id();
+                    news.MatchName = s.MatchName;
+                    news.Newsdate = s.Newsdate;
+                    news.NewsDescription = s.NewsDescription;
+                   
+                    var val = (entity.Ids.OrderByDescending(u => u.idd).FirstOrDefault());
+                    news.NewsId = val.idd;
+                    data.name = "";
 
+                    ent.Ids.Add(data);
+                    entity.News.Add(news);
+                    ent.SaveChanges();
+                    entity.SaveChanges();
+
+
+
+                }
+
+                catch (Exception e)
+                {
+                    throw (e);
+
+                }
+                return 1;
             }
-            return 1;
-        }
 
         public List<News> Search_News(int id)
         {

@@ -19,6 +19,11 @@ namespace IPL_Entity
         public string PlayerName { get; set; }
         public Nullable<int> Age { get; set; }
         public Nullable<int> SpecialityId { get; set; }
+        public string Role { get; set; }
+        public string BattingStyle { get; set; }
+        public string BowlingStyle { get; set; }
+        public string BirthPlace { get; set; }
+        public string TeamName { get; set; }
     
         public virtual Speciality Speciality { get; set; }
         public virtual Team Team { get; set; }
