@@ -37,13 +37,13 @@ namespace Presentation_Layer.Account
                     if (val == 2)
                 {
 
-                    Response.Redirect("~/Account/Customer/Home.aspx");
+                    Response.Redirect("~/Account/Customer/Player_Information.aspx");
 
                 }
                 else
                     if (val == 3)
                 {
-                    Response.Redirect("~/Account/Admin/Home.aspx");
+                    Response.Redirect("~/Account/Admin/Customer_Details.aspx");
                     //~/Account/PL_Team/Add_Team.aspx
                 }
                 else

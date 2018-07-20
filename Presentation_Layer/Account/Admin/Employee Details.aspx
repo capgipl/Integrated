@@ -6,7 +6,7 @@
     <h2>Employee Details</h2>
     <asp:GridView ID="gvemp" runat="server" AutoGenerateColumns="False" DataKeyNames="UserId" DataSourceID="SqlDataSource1">
         <Columns>
-            <asp:BoundField DataField="UserId" HeaderText="UserId" InsertVisible="False" ReadOnly="True" SortExpression="UserId" />
+            
             <asp:BoundField DataField="UserName" HeaderText="UserName" SortExpression="UserName" />
             
             <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />
